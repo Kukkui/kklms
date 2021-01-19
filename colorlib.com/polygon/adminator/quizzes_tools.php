@@ -222,7 +222,7 @@
                   <div class="masonry-item col-md-12">
 
                      <div class="bgc-white p-20 bd">
-                        <h6 class="c-grey-900">Courses Lists</h6>
+                        <h6 class="c-grey-900">Quizzes Lists</h6>
                         <div class="mT-30">
                            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal' >ADD NEW QUIZZ</button><br/>
                                                 
@@ -303,7 +303,7 @@
                                                 // $students=$row["students"];
                                                 
                                                 $action="
-                                                <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>ADD</button>
+                                                
                                                 <button type='button' class='btn btn-danger'  onclick='todel(".$idx.")'>DELETE</button>
                                                 <button type='button' class='btn btn-success'  onclick='toinfo(".$idx.")'>MORE</button>
                                               

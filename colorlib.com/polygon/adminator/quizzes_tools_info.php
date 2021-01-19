@@ -173,11 +173,9 @@
                </ul>
             </div>
          </div>
-        
          <main class="main-content bgc-grey-100">
-
             <div id="mainContent">
-              <div class="row gap-20 masonry pos-r">
+               <div class="row gap-20 masonry pos-r">
                 <form action='/kklms/colorlib.com/polygon/adminator/PageMultiCheckbox3.php' method='post'>
            
                   <div class="masonry-sizer col-md-12"></div>
@@ -404,7 +402,6 @@
                <input name='btnSubmit' type='submit' class="btn btn-primary" value='Submit' style="float: right;" />
 </form>
              <hr/>
-               <div class="row gap-20 masonry pos-r">
                   <div class="masonry-sizer col-md-12"></div>
                   
                   <div class="masonry-item col-md-12">
@@ -431,10 +428,8 @@
                              <div class="tab-content" style="height:1000px">
                                <div id="home" class="tab-pane fade in active">
                                  <br/>
-
-                                 
-
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                              
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -443,9 +438,9 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor0" name="editor0" rows="10">Quizz</textarea>
-                                                      <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($qidx); ?> /> -->
+                                                      <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="type" id="type" value="zero" />
                                                       <script>
                                                        CKEDITOR.replace('editor0');
@@ -473,7 +468,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -482,9 +477,7 @@
                            </form>
                            </div>
                                <div id="menu1" class="tab-pane fade">
-                                  <br/>
-
-                                   <?php 
+                                <?php 
                                   $qqq='';
                                   $o1='';
                                   $o2='';
@@ -500,9 +493,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -540,11 +533,7 @@
                                           
                                        </div>
                                        <br/>
-
-                                       
-                                          <button type="button" onclick="savetest(<?php echo($qidx) ?>,<?php echo('hello') ?>,'HI','HI','HI','HI');" class="btn btn-primary" style="float:right;">SAVE</button>
-                                       
-                                   
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -552,9 +541,9 @@
                               
                            </form>
                                </div>
-                               <div id="menu2" class="tab-pane fade">
-                                  <br/>
 
+
+                               <div id="menu2" class="tab-pane fade">
                                   <?php 
                                   $qqq='';
                                   $o1='';
@@ -571,8 +560,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -583,6 +573,7 @@
                                                    <div class="col-md-12 nopadding">
                                                       <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor2" name="editor2" rows="10"><?php echo($qqq); ?></textarea>
+                                                      <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
                                                       <input type="hidden" name="type" id="type" value="two" />
                                                       <script>
@@ -594,7 +585,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -609,18 +600,18 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
 
                               
                            </form>
-                              </div>
-                               <div id="menu3" class="tab-pane fade">
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                                  <br/>
+                               </div>
 
+
+                               
+                               <div id="menu3" class="tab-pane fade">
                                   <?php 
                                   $qqq='';
                                   $o1='';
@@ -628,7 +619,7 @@
                                   $o3='';
                                   $o4='';
                                   $sql = "SELECT * FROM quizzes WHERE  quizz_id = '$qidx' AND problem_number = '3'";
-                                  $result = mysqli_query($con,$sql);
+                                  $result = mysqli_query($con, $sql);
                                         while ($row = mysqli_fetch_array($result)) {
                                         $qqq = $row["Question"];
                                         $o1 = $row["Option1"];
@@ -637,8 +628,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -647,7 +639,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor3" name="editor3" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -661,7 +653,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -676,8 +668,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <!-- <button type="submit" class="btn btn-primary">SAVE</button> -->
-                                       <input type="submit" name="submit" id="submit" class="button" value="Submit"/>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -686,8 +677,6 @@
                            </form>
                                </div>
                                <div id="menu4" class="tab-pane fade">
-                                  <br/>
-
                                   <?php 
                                   $qqq='';
                                   $o1='';
@@ -704,8 +693,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -714,7 +704,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor4" name="editor4" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -728,8 +718,8 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
-                                <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
+                                 <div class="form-row">
+                                 <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
@@ -737,13 +727,13 @@
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o4" name="o4" placeholder="Option4" value="'.$o4.'"></input>'); ?></div>
                                  <!-- <div class="form-group col-md-6"><label for="inputPassword4">Password</label><input type="text" class="form-control" id="inputPassword4" placeholder="Password"></div> -->
-                                 </div>
+                              </div>
                                              </div>
                                           </div>
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -752,8 +742,6 @@
                            </form>
                                </div>
                                <div id="menu5" class="tab-pane fade">
-                                  <br/>
-
                                   <?php 
                                   $qqq='';
                                   $o1='';
@@ -770,8 +758,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -780,7 +769,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor5" name="editor5" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -794,7 +783,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -809,7 +798,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -818,9 +807,7 @@
                            </form>
                                </div>
                                <div id="menu6" class="tab-pane fade">
-                                  <br/>
-
-                                  <?php 
+                                 <?php 
                                   $qqq='';
                                   $o1='';
                                   $o2='';
@@ -836,8 +823,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -846,7 +834,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor6" name="editor6" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -860,7 +848,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -875,7 +863,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -884,9 +872,7 @@
                            </form>
                                </div>
                                <div id="menu7" class="tab-pane fade">
-                                  <br/>
-
-                                  <?php 
+                                 <?php 
                                   $qqq='';
                                   $o1='';
                                   $o2='';
@@ -902,8 +888,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -912,7 +899,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor7" name="editor7" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -926,7 +913,7 @@
 
                                                 </div>
                                                 <br/>
-                                                <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -941,7 +928,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -950,8 +937,6 @@
                            </form>
                                </div>
                                <div id="menu8" class="tab-pane fade">
-                                  <br/>
-
                                   <?php 
                                   $qqq='';
                                   $o1='';
@@ -968,8 +953,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -978,7 +964,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor8" name="editor8" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -992,7 +978,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -1007,7 +993,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -1016,9 +1002,7 @@
                            </form>
                                </div>
                                <div id="menu9" class="tab-pane fade">
-                                  <br/>
-
-                                  <?php 
+                                 <?php 
                                   $qqq='';
                                   $o1='';
                                   $o2='';
@@ -1034,8 +1018,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -1044,7 +1029,7 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor9" name="editor9" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
                                                       <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
@@ -1058,7 +1043,7 @@
 
                                                 </div>
                                                 <br/>
-                                                <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -1073,7 +1058,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -1082,9 +1067,7 @@
                            </form>
                                </div>
                                <div id="menu10" class="tab-pane fade">
-                                  <br/>
-
-                                  <?php 
+                                 <?php 
                                   $qqq='';
                                   $o1='';
                                   $o2='';
@@ -1100,8 +1083,9 @@
                                         $o4=$row["Option4"];
                                     }
                                     ?>
-                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_edit.php" method="post" >
-                              
+                                  <br/>
+                                 <form action="/kklms/colorlib.com/polygon/adminator/quizzes_tools_add.php" method="post" >
+                                
                               
                               <div class="form-group">
                                        <div class="container-fluid">
@@ -1110,14 +1094,11 @@
                                              <div class="container">
                                                 <div class="row">
                                                    <div class="col-md-12 nopadding">
-                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ><?php echo($qqq); ?></textarea>  -->
+                                                      <!-- <textarea id="txtEditor1" style="width:100%" value="" text="" ></textarea>  -->
                                                       <textarea  cols="80" id="editor10" name="editor10" rows="10"><?php echo($qqq); ?></textarea>
                                                       <!-- <input type="hidden" name="cidx" id="cidx" value=<?php echo($courseidx); ?> /> -->
-                                                      <?php echo('
-                                                         <input type="hidden" name="qidx" id="qidx" value="'.$qidx.'" />
+                                                      <input type="hidden" name="qidx" id="qidx" value=<?php echo($qidx); ?> />
                                                       <input type="hidden" name="type" id="type" value="ten" />
-                                                      '); ?>
-
                                                       <script>
                                                        CKEDITOR.replace('editor10');
                                                        // info();
@@ -1127,7 +1108,7 @@
 
                                                 </div>
                                                 <br/>
-                                                 <div class="form-row">
+                                 <div class="form-row">
                                  <div class="alert alert-success form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o1" name="o1" placeholder="Option1" value="'.$o1.'"></input>'); ?></div>
                                  <!-- <div class="form-row"> -->
                                  <div class="alert alert-danger form-group col-md-12"><label for="inputEmail4"></label><?php echo('<input type="text" class="form-control" id="o2" name="o2" placeholder="Option2" value="'.$o2.'"></input>'); ?></div>
@@ -1142,7 +1123,7 @@
                                           
                                        </div>
                                        <br/>
-                                       <button type="submit" class="btn btn-primary" style="float:right;">SAVE</button>
+                                       <button type="submit" class="btn btn-primary">SAVE</button>
                               </div>
 
 
@@ -1175,33 +1156,18 @@
       </div>
       </div><script type="f195bb265fa7d2bce7864f42-text/javascript" src="vendor.js"></script><script type="f195bb265fa7d2bce7864f42-text/javascript" src="bundle.js"></script><script src="../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="f195bb265fa7d2bce7864f42-|49" defer=""></script>
       <script type="text/javascript">
-         function savetest(QIDX,TYPEX,O1,O2,O3,O4){
-            var qid = QIDX;
-            var typex = TYPEX;
-            var Opt1=O1;
-            var opt2 = O2;
-            var opt3 =O3;
-            var opt4 = O4;
+         function info(){
          // CKEDITOR.replace('editor1');
          // editor_1.setData('HIHI');
          // editor_1.setData('HIHI');
          // editor_1.setData('HIHI');
          //  document.getElementById("editor1").instances.setData("&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href=&quot;https://ckeditor.com/&quot;&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;");
-          // document.getElementById("course_name_id").innerHTML = "ookjhgfkhgNMukhkjhm,mn,MNB";
+          document.getElementById("course_name_id").innerHTML = "ookjhgfkhgNMukhkjhm,mn,MNB";
           // document.getElementById("editor1").innerHTML = "BNMukhkjhm,mn,MNB";
           // document.getElementById("editor2").innerHTML = "ookjhgfkhgNMukhkjhm,mn,MNB";
           // document.getElementById("editor1").innerHTML = "BNMukhkjhm,mn,MNB";
           // document.getElementById("editor2").innerHTML = "ookjhgfkhgNMukhkjhm,mn,MNB";
-          alert(qid);
-          alert(typex);
-          alert(Opt1);
-
-          alert(Opt2);
-          alert(Opt3);
-
-          alert(Opt4);
-
-
+          
        }
       </script>
    </body>

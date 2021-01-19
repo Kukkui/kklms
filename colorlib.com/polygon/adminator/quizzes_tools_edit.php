@@ -315,12 +315,4 @@
          header( "location: http://localhost/kklms/colorlib.com/polygon/adminator/quizzes_tools.php");
            exit(0);
 
-         ?>
-
-          <!-- < ?php header("Location: /kklms/colorlib.com/polygon/adminator/courses_tools2.php"); ?> -->
-       </body>
-      
-   </body>
-   <!-- Mirrored from colorlib.com/polygon/adminator/forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jul 2020 12:13:35 GMT -->
-</html>
-
+?>
